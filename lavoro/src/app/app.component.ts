@@ -10,4 +10,16 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'lavoro';
+
+  piu(numero : HTMLInputElement) : boolean
+  {
+
+    return false;
+  }
+
+  meno(numero : HTMLInputElement) : boolean
+  {
+
+    return false;
+  }
 }
