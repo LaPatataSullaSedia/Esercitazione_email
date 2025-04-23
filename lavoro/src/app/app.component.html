@@ -5,8 +5,8 @@
 {{numeri.nClick}}
 {{numeri.tot}}
 <br><br>
-<button (click)="favorito">favorito</button>
+<button (click)="favorito()">favorito</button>
 <br><br>
 @for(fav of vett_favoriti; track fav){
-  {{fav.tot}} - {{fav.nClick}}
+  <app-mostr [numeri]="fav"></app-mostr><br>
 }
