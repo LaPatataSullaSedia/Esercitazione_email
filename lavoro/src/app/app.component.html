@@ -1,3 +1,12 @@
 <input type="number" placeholder="numero da calcolare" #numero>
 <button (click)="piu(numero)">+</button>
 <button (click)="meno(numero)">-</button>
+<br><br>
+{{numeri.nClick}}
+{{numeri.tot}}
+<br><br>
+<button (click)="favorito">favorito</button>
+<br><br>
+@for(fav of vett_favoriti; track fav){
+  {{fav.tot}} - {{fav.nClick}}
+}
